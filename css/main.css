@@ -1,0 +1,124 @@
+
+body {
+    font-family: tahoma;
+    color:#282828;
+    margin: 0px;
+    --background-img: "url('../assets/vmSocks-green-onWhite.jpg'";
+    background-image: var(--background-img);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .blur {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(10,10,10,.25);
+  }
+  .nav-bar {
+    height: 40px;
+    background: linear-gradient(-90deg, #84CF6A, #16C0B0);
+    margin-bottom: 15px;
+    z-index: 10;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2)
+  }
+
+  .product {
+    display: inline-flex;
+    flex-flow: wrap;
+    align-items: top;
+    justify-content: center;
+  }
+
+  img {
+    width: 80%;
+    margin: 0 40px 40px;
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14)
+  }
+
+  .product-image {
+    width: 100%;
+    z-index: 11;
+  }
+  .product-info {
+    z-index: 10;
+    padding: 40px;
+    margin-left: -40px;
+    margin-right: 40px;
+    background: rgba(200,200,200,.5);
+    box-shadow: 0 8px 17px 2px rgba(0,0,0,0.14)
+  }
+  .product-image,
+  .product-info {
+    display: inline-block;
+    float: left;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: calc(50% - 50px);
+    height: 100%;
+
+  }
+  .product-info span {
+    font-style: italic;
+    opacity: .6;
+  }
+  .color-box {
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+  }
+
+  .cart {
+    margin-right: 25px;
+    float: right;
+    border: 1px solid #d8d8d8;
+    padding: 5px 20px;
+  }
+
+  button {
+    display: inline-block;
+    float: left;
+    margin-top: 30px;
+    margin-right: 1em;
+    border: none;
+    background-color: #1E95EA;
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: 14px;
+  }
+
+  .disabledButton {
+    border: 1px solid #e7e7e7;
+    background-color: #d8d8d4;
+  }
+
+  .review-form {
+    width: 400px;
+    padding: 20px;
+    margin: 40px;
+    border: 1px solid #d8d8d8;
+  }
+
+  input {
+    width: 100%;
+    height: 25px;
+    margin-bottom: 20px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 60px;
+  }
+
+  .tab {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+
+  .activeTab {
+    color: #16C0B0;
+    text-decoration: underline;
+  }
