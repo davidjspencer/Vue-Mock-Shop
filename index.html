@@ -12,8 +12,8 @@
 	<div class="nav-bar">&nbsp;</div>
 	<div id="app">
 		<div class="cart">
-					<p>Cart ({{ cart.length }})</p>
-				</div>
+			<p>Cart ({{ cart.length }})</p>
+		</div>
 		<product :premium="premium"
 						 @add-to-cart="updateCart"
 						 @remove-item="removeItem"></product>

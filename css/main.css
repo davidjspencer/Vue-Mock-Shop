@@ -11,7 +11,7 @@ body {
   }
   .blur {
     position: fixed;
-    z-index: 1;
+    z-index: -1;
     width: 100%;
     height: 100%;
 
@@ -26,6 +26,7 @@ body {
   }
 
   .product {
+    z-index: 20;
     display: inline-flex;
     flex-flow: wrap;
     align-items: top;
@@ -40,10 +41,8 @@ body {
 
   .product-image {
     width: 100%;
-    z-index: 11;
   }
   .product-info {
-    z-index: 10;
     padding: 40px;
     margin-left: -40px;
     margin-right: 40px;
@@ -58,6 +57,7 @@ body {
     margin-bottom: 40px;
     width: calc(50% - 50px);
     height: 100%;
+    z-index: 10;
 
   }
   .product-info span {
@@ -100,12 +100,14 @@ body {
     padding: 20px;
     margin: 40px;
     border: 1px solid #d8d8d8;
+    z-index: 10;
   }
 
   input {
     width: 100%;
     height: 25px;
     margin-bottom: 20px;
+
   }
 
   textarea {
